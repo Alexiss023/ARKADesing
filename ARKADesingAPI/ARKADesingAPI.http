@@ -4,3 +4,50 @@ GET {{ARKADesingAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+### ---------- CRUD Insumo (KAN-58) ----------
+
+GET {{ARKADesingAPI_HostAddress}}/api/Insumos
+Accept: application/json
+
+###
+
+GET {{ARKADesingAPI_HostAddress}}/api/Insumos?bajoMinimo=true
+Accept: application/json
+
+###
+
+GET {{ARKADesingAPI_HostAddress}}/api/Insumos/1
+Accept: application/json
+
+###
+
+POST {{ARKADesingAPI_HostAddress}}/api/Insumos
+Content-Type: application/json
+
+{
+  "idProveedor": 1,
+  "nombre": "Vinil textil blanco",
+  "unidadMedida": "metros",
+  "existencia": 50,
+  "existenciaMinima": 10
+}
+
+###
+
+PUT {{ARKADesingAPI_HostAddress}}/api/Insumos/1
+Content-Type: application/json
+
+{
+  "idProveedor": 1,
+  "nombre": "Papel de sublimación",
+  "unidadMedida": "hojas",
+  "existencia": 900,
+  "existenciaMinima": 200
+}
+
+###
+
+DELETE {{ARKADesingAPI_HostAddress}}/api/Insumos/99
+
+###

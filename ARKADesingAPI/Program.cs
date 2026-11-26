@@ -4,7 +4,7 @@ using ARKADesingAPI.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ArkaDbContext>(options =>
-  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnetion")));
+  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 
